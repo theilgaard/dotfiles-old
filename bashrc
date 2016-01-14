@@ -9,7 +9,7 @@ export HISTFILESIZE=
 
 # Convenient aliases
 alias ls="ls --color=auto"
-alias la="ls -A"
+alias lah="ls -lah"
 alias grep="grep --color=auto"
 alias pacman="sudo pacman --color=always"
 alias reset="reset && source ~/.bashrc"
