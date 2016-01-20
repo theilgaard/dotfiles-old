@@ -18,3 +18,6 @@ alias reset="reset && source ~/.bashrc"
 mkcd() {
   mkdir -p "$@" && cd "$@"
 }
+
+# Make xterm transparent
+[ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
