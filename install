@@ -3,8 +3,8 @@
 # Install dotfiles.
 
 dir="$(cd "$(dirname "$0")" && pwd)"
-files="$(ls "$dir")"
-ignore="README.md install"
+files="$(ls -a "$dir")"
+ignore=". .. README.md install"
 
 for file in $ignore; do
   files="${files/"$file"}"
