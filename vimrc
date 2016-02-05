@@ -29,6 +29,24 @@ set laststatus=2
 " Set leader key
 let mapleader=' '
 nnoremap <space> <nop>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>z :wq<CR>
+nnoremap <leader>W :w!<CR>
+nnoremap <leader>Q :q!<CR>
+nnoremap <leader>Z :wq!<CR>
+"" Bufferswitching
+noremap (     :bprev<CR>
+noremap )     :bnext<CR>
+"" Close Buffer
+noremap Q :bd<CR>
 
 " Disable search match highlighting
 map <leader>h :nohlsearch<CR>
+
+" No bells
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
