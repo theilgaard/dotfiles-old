@@ -1,0 +1,9 @@
+[user]
+	email = kristian.theilgaard@gmail.com
+	name = Kristian Theilgaard
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=0
+[core]
+	editor = vim

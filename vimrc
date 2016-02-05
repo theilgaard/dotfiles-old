@@ -24,6 +24,10 @@ set ignorecase
 " Always show status line
 set laststatus=2
 
+"" Better movement through wrapped lines
+noremap j gj
+noremap k gk
+
 " ====  Input ==== 
 
 " Set leader key
