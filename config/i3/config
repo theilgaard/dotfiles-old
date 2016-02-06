@@ -176,5 +176,11 @@ exec setxkbmap -layout us -variant altgr-intl -option nodeadkeys
 
 new_window none
 
+# Purdy gaps!
 smart_gaps on
 gaps inner 2
+
+# Audio soft buttons
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks

@@ -4,7 +4,7 @@
 
 dir="$(cd "$(dirname "$0")" && pwd)"
 files="$(ls -a "$dir")"
-ignore=". .. README.md install"
+ignore=".git . .. README.md install"
 
 for file in $ignore; do
   files="${files/"$file"}"
