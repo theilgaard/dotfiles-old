@@ -126,7 +126,8 @@ bindsym $mod+Shift+0 move container to $workspace10
 
 # Open programs on workspaces
 assign [class="chromium"] $workspace2
-assign [class="spotify"] $workspace9
+for_window [class="Spotify"] move to workspace $workspace9
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -170,6 +171,7 @@ bar {
 }
 
 exec chromium
+exec spotify
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 exec compton -f
 exec setxkbmap -layout us -variant altgr-intl -option nodeadkeys
