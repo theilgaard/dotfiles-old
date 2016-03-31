@@ -1,86 +1,52 @@
-URxvt*inheritPixmap: true
-URxvt*.transparent: true
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*.shading: 18 
+! Orignally from Alex Booker github.com/alexbooker
+Xcursor.theme: DMZ-White
 
-URxvt.depth:                32
-URxvt.geometry:             90x30
-URxvt.transparent:          false
-URxvt.fading:               0
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
-URxvt.loginShell:           true
-URxvt.saveLines:            50
-URxvt.internalBorder:       3
-URxvt.lineSpace:            0
+URxvt.font:                xft:Hack-Regular:pixelsize=12
+URxvt.boldFont:            xft:Hack-Bold:pixelsize=12
+URxvt.italicFont:          xft:Hack-Italic:pixelsize=12
+URxvt.boldItalicFont:      xft:Hack-BoldItalic:pixelsize=12
+URxvt.letterSpace:         -1
 
-! Fonts
-URxvt.font:           xft:Hack-Regular:pixelsize=12
-URxvt.imFont:         xft:Hack-Regular:pixelsize=12
-URxvt.boldFont:       xft:Hack-Bold:pixelsize=12
-URxvt.italicFont:     xft:Hack-Italic:pixelsize=12
-URxvt.boldItalicFont: xft:Hack-BoldItalic:pixelsize=12
+URxvt*color0:              #101218
+URxvt*color1:              #ee829f
+URxvt*color2:              #a5ffe1
+URxvt*color3:              #ffefcc
+URxvt*color4:              #97bbf7
+URxvt*color5:              #c0b7f9
+URxvt*color6:              #97e0ff
+URxvt*color7:              #d1d4e0
+URxvt*color8:              #7780a1
+URxvt*color9:              #ee829f
+URxvt*color10:             #a5ffe1
+URxvt*color11:             #ffefcc
+URxvt*color12:             #97bbf7
+URxvt*color13:             #c0b7f9
+URxvt*color14:             #97e0ff
+URxvt*color15:             #ffffff
+URxvt*color16:             #f99170
+URxvt*color17:             #fcc09e
+URxvt*color18:             #1f222d
+URxvt*color19:             #252936
+URxvt*color20:             #C0C5CE
+URxvt*color21:             #C9CCDB
+URxvt*background:          #101218
+URxvt*foreground:          #E6EFF7
+URxvt*cursorColor:         #E6EFF7
 
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
 
-! Fix font space
-URxvt*letterSpace: -1
+URxvt.scrollBar:           false
 
-! Scrollbar
-URxvt.scrollStyle:          rxvt
-URxvt.scrollBar:            false
+URxvt*fading:              30
 
-! Perl extensions
-URxvt.perl-ext-common:      default,matcher
-URxvt.matcher.button:       1
-URxvt.urlLauncher:          chromium 
+URxvt.perl-ext-common:     matcher,resize-font,foo
 
-! Cursor
-URxvt.cursorBlink:          true
-URxvt.cursorColor:          #354b53
-URxvt.cursorUnderline:      false
+URxvt.keysym.F11:          perl:fullscreen:switch
 
-! Pointer
-URxvt.pointerBlank:         true
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
 
-!!Source http://github.com/altercation/solarized
-! Theme: Solarized by Ethan Schoonover (http://ethanschoonover.com/solarized)
-
-URxvt*background:                     #002b36
-URxvt*foreground:                     #93a1a1
-URxvt*cursorColor:                    #93a1a1
-URxvt*scrollColor:                    #93a1a1
-URxvt*highlightColor:                 #586e75
-URxvt*highlightTextColor:             #839496
-
-URxvt*color0:                         #002b36
-URxvt*color1:                         #dc322f
-URxvt*color2:                         #859900
-URxvt*color3:                         #b58900
-URxvt*color4:                         #268bd2
-URxvt*color5:                         #6c71c4
-URxvt*color6:                         #2aa198
-URxvt*color7:                         #93a1a1
-URxvt*color8:                         #657b83
-URxvt*color9:                         #dc322f
-URxvt*color10:                        #859900
-URxvt*color11:                        #b58900
-URxvt*color12:                        #268bd2
-URxvt*color13:                        #6c71c4
-URxvt*color14:                        #2aa198
-URxvt*color15:                        #fdf6e3
-
-URxvt*color16:                        #cb4b16
-URxvt*color17:                        #d33682
-URxvt*color18:                        #073642
-URxvt*color19:                        #586e75
-URxvt*color20:                        #839496
-URxvt*color21:                        #eee8d5
-
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: #002b37, #002b37, #003642
-rofi.color-normal: #002b37, #819396, #002b37, #003642, #819396
-rofi.color-active: #002b37, #008ed4, #002b37, #003642, #008ed4
-rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
+URxvt.url-launcher:        /usr/bin/chromium
+URxvt.keysym.M-Delete:     perl:matcher:list
+URxvt.colorUL:             #7780a1
