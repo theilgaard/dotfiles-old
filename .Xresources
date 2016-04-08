@@ -34,7 +34,7 @@ URxvt*cursorColor:         #E6EFF7
 URxvt*foreground:         #E6EFF7
 ! Transparency
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0200/c800
+URxvt*background: rgba:0000/0000/0000/DE00
 
 URxvt.internalBorder:      0
 URxvt.externalBorder:      0
