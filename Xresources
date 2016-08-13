@@ -1,0 +1,72 @@
+! Orignal from Alex Booker github.com/alexbooker
+! Modified by Kristian Theilgaard github.com/theilgaard
+Xcursor.theme: DMZ-White
+
+URxvt.font:                xft:Hack-Regular:pixelsize=12
+URxvt.boldFont:            xft:Hack-Bold:pixelsize=12
+URxvt.italicFont:          xft:Hack-Italic:pixelsize=12
+URxvt.boldItalicFont:      xft:Hack-BoldItalic:pixelsize=12
+URxvt.letterSpace:         -1
+
+! special
+*.foreground:   #ff6600
+*.background:   #000000
+*.cursorColor:  #ff6600
+
+! black
+*.color0:       #101218
+*.color8:       #6e82cc
+
+! red
+*.color1:       #ff4d7d
+*.color9:       #ff4d7d
+
+! green
+*.color2:       #3bffbe
+*.color10:      #3bffbe
+
+! yellow
+*.color3:       #fbfe3e
+*.color11:      #fbfe3e
+
+! blue
+*.color4:       #7394ff
+*.color12:      #7394ff
+
+! magenta
+*.color5:       #c26ff9
+*.color13:      #c26ff9
+
+! cyan
+*.color6:       #1cf7fe
+*.color14:      #1cf7fe
+
+! white
+*.color7:       #ff6600
+*.color15:      #ffffff
+
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0000/DF00
+
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+
+URxvt.scrollBar:           false
+
+URxvt*fading:              30
+
+URxvt.perl-ext-common:     default,clipboard, matcher,resize-font,foo
+
+URxvt.keysym.F11:          perl:fullscreen:switch
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
+
+URxvt.url-launcher:        /usr/bin/chromium
+URxvt.keysym.M-Delete:     perl:matcher:list
+URxvt.colorUL:             #7780a1
+
+
+! Copy pasting
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
