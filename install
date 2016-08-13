@@ -2,17 +2,23 @@
 #
 # Install dotfiles.
 
+echo "[+] Installing dotfiles" 
 dir="$(cd "$(dirname "$0")" && pwd)"
 files="$(ls -a "$dir")"
 ignore=".git . .. README.md install"
 
+echo "[+] Ignoring files"
 for file in $ignore; do
+  printf "  ${file}"
   files="${files/"$file"}"
 done
 
+echo "[+] Linking dotfiles"
 for file in $files; do
   src="${dir}/${file}"
   link="${HOME}/.${file}"
-  printf "ln -snf ${src} ${link}\n"
+  echo "  ln -snf ${src} ${link}"
   ln -snf "$src" "$link"
 done
+
+echo "[+] All done!"
