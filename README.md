@@ -12,6 +12,6 @@ Linux configuration files
 
     ./install
 
-Note that this will overwrite existing files.
+This will create symbolic links in your home directory to the files in the repository.
 
 
