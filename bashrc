@@ -13,10 +13,11 @@ export PATH=$PATH:~/bin
 alias ls="ls --color=auto"
 alias la="ls -a --color=auto"
 alias lah="ls -lah"
-alias ll="ls -lah"
+alias ll="ls -lh"
 alias grep="grep --color=auto"
 alias pacman="sudo pacman --color=always"
 alias reset="reset && source ~/.bashrc"
+alias reboot="sudo reboot"
 
 mkcd() {
   mkdir -p "$@" && cd "$@"
@@ -24,3 +25,6 @@ mkcd() {
 
 # Make xterm transparent
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
+
+# Set US International keyboard, no dead keys
+setxkbmap -layout us -variant altgr-intl -option nodeadkeys
